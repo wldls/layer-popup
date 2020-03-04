@@ -1,0 +1,193 @@
+#header .logo{position:absolute;top:0;left:0;z-index:10;width:150px;background:#282A3A}
+#header .nav_top{min-width:auto;padding-right:160px;padding-bottom:18px}
+#header .nav_top>li{float:left;position:relative}
+#header .nav_top>li .txt{display:-ms-flex;display:flex;-ms-align-items:center;align-items:center;height:34px;padding:5px 20px;color:#b7b7b7;line-height:1.1rem;text-align:center;font-size:14px;cursor:pointer}
+#header .nav_top>li .txt:hover{color:#2739c1}
+#header .nav_top>.on .txt{color:#363636;line-height:16px;font-size:16px}
+#header .nav_top_2depth{display:none;position:absolute;top:75px;left:0;z-index:10;background:#fff}
+#header .nav_top_2depth.on{display:block;animation:fade-in 0.3s ease 1, move-up 0.3s ease-out 1}
+#header .nav_top_2depth .ico_triangle{position:absolute;top:-9px;left:28px;z-index:10;width:20px;height:20px;border-top-right-radius:20%;background:#fff;transform:rotate(-34deg) skewX(21deg) scale(1, .9)}
+#header .nav_top_2depth ul{width:250px;padding:20px 0;border-radius:4px;background:#fff;box-shadow:0 0 15px 1px rgba(69,65,78,.2);box-sizing:border-box}
+#header .nav_top_2depth .on a,#header .nav_top_2depth .on button{color:#676c7b}
+#header .nav_top_2depth a,#header .nav_top_2depth button{display:block;padding:10px 30px;color:#b7b7b7;line-height:1.1rem}
+#header .nav_top_2depth a:hover,#header .nav_top_2depth button:hover{color:#2739c1}
+#header .snb{position:absolute;top:33px;right:32px}
+#header .snb_list:after{display:block;clear:both;content:''}
+#header .snb_list>li{float:left}
+#header .username{display:inline-block;color:#b7b7b7;line-height:1.1rem;cursor:pointer}
+#header .username:hover{color:#2739c1}
+#header .nav_top_2depth.v1{top:60px;left:auto;right:0}
+#header .nav_top_2depth.v1 .ico_triangle{left:110px;background:#282A3A}
+#header .nav_top_2depth.v1 ul{width:180px;background:#282A3A}
+#header .nav_top_2depth.v1 a,#header .nav_top_2depth.v1 button{color:#868aa8}
+#header .nav_top_2depth.v1 a:hover,#header .nav_top_2depth.v1 button:hover{color:#fff}
+#header .logo_wrap{position:absolute;top:0;left:0;z-index:10;width:150px;height:100%;background:#2C2E3E}
+#header .logo{height:50px;padding-top:30px}
+
+#aside .nav_left .ico{background:url('/resources/images/common/sp_gnb.png') no-repeat}
+#aside .nav_left .basic .ico{background-position:0 0}
+#aside .nav_left .achv .ico{background-position:-32px 0}
+#aside .nav_left .loockup .ico{background-position:-64px 0}
+#aside .nav_left .mng .ico{background-position:-96px 0}
+#aside .nav_left .statistics .ico{background-position:-128px 0}
+#aside .nav_left .basic.on .ico,#aside .nav_left .basic a:hover .ico{background-position:0 -32px}
+#aside .nav_left .achv.on .ico,#aside .nav_left .achv a:hover .ico{background-position:-32px -32px}
+#aside .nav_left .loockup.on .ico,#aside .nav_left .loockup a:hover .ico{background-position:-64px -32px}
+#aside .nav_left .mng.on .ico,#aside .nav_left .mng a:hover .ico{background-position:-96px -32px}
+#aside .nav_left .statistics.on .ico,#aside .nav_left .statistics a:hover .ico{background-position:-128px -32px}
+
+@keyframes fade-in{
+	from{opacity:0}
+	to{opacity:1}
+}
+
+@keyframes move-up{
+	from{margin-top:10px}
+	to{margin-top:0}
+}
+
+/* login */
+#wrap.login_wrap{display:-ms-flex;display:flex;-ms-justify-content:center;justify-content:center;-ms-align-items:center;align-items:center;}
+.login_box{width:400px;padding:60px 40px 50px;background:#fff}
+.login_box .title{display:block;text-align:center;font-size:24px;font-weight:bold}
+.login_box input[type="text"],.login_box input[type="password"]{width:100%;padding:10px;border:0;box-sizing:border-box}
+.login_box .inp_list{width:100%;margin:50px auto 30px}
+.login_box .inp_list li:last-child{margin-top:10px;padding-top:10px;border-top:1px solid #ebedf2}
+.login_box .btn_login{width:100%;height:47px;margin:30px 0 15px;border-radius:3px;background:#5867dd;color:#fff;font-size:14px}
+.login_box .txt_ref{line-height:1.2rem}
+.login_box .txt_ref.v1{color:#9d9d9d;letter-spacing:-1px;font-size:12px}
+.login_box .link_list{margin:5px 0 40px}
+.login_box .link_list:after{display:block;clear:both;content:''}
+.login_box .link_list li{float:left}
+.login_box .link_list li:last-child{margin-left:10px;padding-left:10px;border-left:1px solid #d9d9d9}
+
+/* datepicker */
+.ui-widget-content{border: 1px solid #f4f5f8;background:#fff;color:#333}
+.ui-widget-content a{color:#333}
+.ui-widget-header{color:#333;font-weight: bold}
+.ui-widget-header a{color:#333}
+.ui-datepicker{display:none;width:245px;padding:10px;box-shadow:0px 0px 15px 1px rgba(69,65,78,0.2)}
+.ui-datepicker .ui-datepicker-header{position:relative}
+.ui-datepicker .ui-datepicker-prev,.ui-datepicker .ui-datepicker-next{position:absolute;top:7px;width:6px;height:9px;padding:5px;cursor:pointer}
+.ui-datepicker .ui-datepicker-prev{left:20px;background:url('/resources/images/common/ico_prev.png') no-repeat 50% 50%}
+.ui-datepicker .ui-datepicker-next{right:20px;background:url('/resources/images/common/ico_next.png') no-repeat 50% 50%}
+.ui-datepicker .ui-datepicker-prev span,.ui-datepicker .ui-datepicker-next span{display: block;position: absolute;left: 50%;margin-left: -8px;
+top: 50%;margin-top: -8px;}
+.ui-datepicker .ui-datepicker-title{
+    display:-webkit-flex;display:-ms-flex;display:flex;
+    -webkit-justify-content:center;-ms-justify-content:center;justify-content:center;
+    -webkit-align-items:center;-ms-align-items:center;align-items:center;
+    text-align: center;font-weight:normal;cursor:default
+}
+.ui-datepicker .ui-datepicker-title select{outline:none}
+.ui-datepicker select.ui-datepicker-year,.ui-datepicker select.ui-datepicker-month{margin:0 5px}
+.ui-datepicker select.ui-datepicker-year{width:70px}
+.ui-datepicker select.ui-datepicker-month{width:60px}
+.ui-datepicker table {width: 100%;margin-top:17px;border-collapse: collapse}
+.ui-datepicker th,.ui-datepicker td{width:30px;height:30px;border:0;border-radius:3px;color:#575962;text-align:center}
+.ui-datepicker th{font-weight:bold}
+.ui-datepicker td{cursor:pointer}
+.ui-datepicker td:hover{background:#EBEDF2}
+.ui-datepicker .ui-datepicker-today{position:relative}
+.ui-datepicker .ui-datepicker-today,.ui-datepicker .ui-datepicker-today:hover{background:#828ee6;color:#fff}
+.ui-datepicker .ui-datepicker-today a{color:#fff}
+.ui-datepicker .ui-datepicker-today:before{display:inline-block;position:absolute;bottom:4px;right:4px;border:solid transparent;border-width:0 0 7px 7px;border-bottom-color:#fff;border-top-color:rgba(0,0,0,0.2);box-sizing: border-box;content: ''}
+.ui-datepicker .ui-datepicker-current-day,.ui-datepicker .ui-datepicker-current-day:hover{background:#5E65DB;color:#fff}
+.ui-datepicker .ui-datepicker-current-day a{color:#fff}
+.ui-datepicker .ui-datepicker-other-month:hover{background:none;cursor: default}
+.ui-datepicker .ui-state-disabled{color:#ccc}
+.ui-datepicker .ui-icon {display:block;overflow:hidden;left:.5em;top:.3em;text-indent:-99999px;background-repeat:no-repeat}
+.ui-datepicker.ui-monthpicker{width:190px}
+.ui-datepicker.ui-monthpicker table{margin-top:5px}
+.ui-datepicker.ui-monthpicker td{height:40px}
+.ui-datepicker.ui-monthpicker .ui-state-default{font-size:14px}
+.ui-datepicker.ui-monthpicker .ui-datepicker-today{background:#5E65DB;color:#fff}
+.ui-datepicker.ui-monthpicker .ui-datepicker-today:before{display:none}
+
+/* draggable */
+.ui-draggable{-webkit-box-shadow:0 1px 15px 1px rgba(69,65,78,.08);box-shadow:0 1px 15px 1px rgba(69,65,78,.08)}
+
+/* input 아이콘 */
+.tbl_wrap .inp_box{width:200px}
+.tbl_wrap .inp_box.full{width:100%}
+.inp_box{display:inline-block;position:relative;box-sizing:border-box;vertical-align:top}
+.inp_box.calendar{width:120px}
+.inp_box:after{position:absolute;top:50%;right:7px;background:url('/resources/images/common/sp.png') no-repeat;content:''}
+.inp_box.search:after{width:19px;height:19px;margin-top:-9px;background-position:0 -57px}
+.inp_box.calendar:after{width:17px;height:18px;margin-top:-9px;background-position:-21px -57px}
+.inp_box.keyboard:after{width:20px;height:14px;margin-top:-7px;background-position:-40px -57px}
+.inp_box.barcode:after{width:21px;height:16px;margin-top:-8px;background-position:-62px -57px}
+.inp_box input[type="text"]{width:100%}
+.inp_box.search input{padding-right:30px}
+.inp_box.calendar input{padding-right:28px}
+.inp_box.keyboard input{padding-right:31px}
+.inp_box.barcode input{padding-right:33px}
+
+/* input 사이즈 */
+input[type="text"].w50{width:50px}
+
+/* button */
+.btn_wrap .btn_move_row{min-width:auto;padding:6px 8px}
+.btn_move_row .sp{display:inline-block;width:14px;height:8px;margin-top:3px}
+.btn_move_row[data-move-type^="up"] .sp{background-position:-62px -39px}
+.btn_move_row[data-move-type^="down"] .sp{background-position:-78px -39px}
+.btn_move_row[data-move-type^="max"] .sp{width:14px;height:16px;margin:0}
+.btn_move_row[data-move-type="maxup"] .sp{background-position:-94px -39px}
+.btn_move_row[data-move-type="maxdown"] .sp{background-position:-110px -39px}
+
+/* 텍스트 */
+.txt_err{display:none}
+.txt_err.on{display:block}
+
+/* hanson */
+.handsontable .htDimmed.htInvalid{color:#fff}
+
+/* 교실 */
+.newclass_list li{margin-bottom:15px}
+.newclass_name{display:inline-block;margin-left:10px}
+
+/* 교수 선택 팝업 형식의 ui */
+.article_wrap:after{display:block;clear:both;content:''}
+.article_wrap .article{float:left;margin:0}
+.article_wrap .article:first-child{width:69%;margin-right:1%}
+.article_wrap .article:last-child{width:29%;margin-left:1%}
+.data_box{overflow:auto;height:80px;padding:10px;border:1px solid #f4f5f8}
+.data_box .data_list li{margin-top:8px}
+.data_box .data_list li:first-child{margin:0}
+.data_box .data_list .btn_remove{margin:2px 0 0 8px}
+
+/* 교수 선택 팝업 */
+.pop_professor_m .article_wrap .article:last-child{padding-top:47px}
+.pop_professor_m .pop_txt{margin-bottom:17px;font-weight:bold}
+.pop_professor_m .tbl_wrap{overflow:auto;height:422px;margin-bottom:0}
+.pop_professor_m .data_box{height:400px}
+
+/* 정렬순서 설정 */
+.pop_sort .btn_move_row[data-move-type$="10"]:before{display:inline-block;margin-right:5px;content:'10개'}
+.pop_sort .sort_rows .on{background:#e7f2ff}
+
+/* view페이지에서 첨부파일 다운로드 */
+.file_list li{margin-top:10px}
+.file_list li:first-child{margin-top:0}
+
+/*  담당자 답변 */
+.comt_area .field_box{margin-top:30px}
+.comt_area .btn_cancel{display:none}
+.comt_area .btn_cancel.on{display:inline-block}
+.comt_area .txt_box{margin-top:10px}
+.comt_area .txt_box textarea{width:100%}
+.comt_area .comt_box{margin-top:10px;padding-right:170px}
+.comt_area .comt_box{position:relative}
+.comt_area .comt_box .date{position:absolute;top:0;right:0}
+.comt_area .write_mode, .view_mode{display:none}
+.comt_area .write_mode.on, .view_mode.on{display:block}
+
+/* 교수별 업적 등록 */
+.score_box{display:inline-block;overflow:auto;width:677px;height:60px;padding:10px;border:1px solid #ebedf2;vertical-align:top}
+.ex_row{display:none}
+.ex_row.on{display:table-row}
+.achv .tbl_wrap table{position: relative}
+.btn_achv_remove{position: absolute;top:3px;right:-25px}
+
+/* 차트 */
+.chart_wrap{margin-top:50px}
